@@ -1,0 +1,30 @@
+\documentclass{article}
+\begin{document}
+\section{}
+\paragraph{} The init method of LabeledGraph accepts an adjacency list in the form of a dictionary. The keys are integers that represent vertices and the values are lists of integers which represent the neighbors of the vertex.
+\paragraph{} The init method also requires the indices of the ends
+\paragraph{} The adjacency list should be a directed graph. The list of neighbors needs to refer to integers that are less than the given vertex, so the edge differences computations are well defined.
+\paragraph{} The algorithm to find all graceful ends is more efficient if we use an undirected graph. We compute a given edge difference once instead of twice.
+\paragraph{} The helper method construct new differences returns False if there is a repetition in the new edge differences and returns the new edge differences otherwise.
+\paragraph{} The only value in the edge difference dictionary is 0.
+\paragraph{} There is no point of value, because helper\_find\_ends already saves the values of the vertices.
+\paragraph{} You should clarify how we are saving every piece of information.
+\paragraph{} (Temporary) end\_values is good. Find valid labels should
+takelabels.
+
+\section{new labeled graph program}
+\paragraph{} The adjacency list is a directed graph. The list of neighbors are
+all less than the key.
+\paragraph{} We first discuss the parameters of the helper. The remaining labels
+and labels are disjoint lists, whose unions are the integers {1, 2, ...,
+  |V|}. The edge differences are a set.
+The index is the vertex we are currently trying to label.
+\paragraph{} The try label function returns a list of four elements.
+\paragraph{Some notes on sets} set.isdisjoint(set1), set.add(element), emptyset
+= set()
+\paragraph{} Adjacencylist is a dictionary.
+\paragraph{} Create a program specifically for n-1-1 graphs.
+
+\section{polymake program}
+\paragraph{Learning Perl} @ is for arrays, $ is for scalars
+\end{document}
